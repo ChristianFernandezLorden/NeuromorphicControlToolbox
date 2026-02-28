@@ -149,17 +149,17 @@ Simulating will yield an :matlab:`out` variable of the class :class:`Simulink.Si
 
 The logged signals are stored in the :matlab:`logsout` property for signals using the signal logging of Simulink and in the :matlab:`simout` property (or more generally the name specified by the :mod:`To Workspace` block) for signals using the :mod:`To Workspace` block.
 
-From this data, we can then perform some analysis or plotting of the results. For example, we could use the :func:`NeuroCont.signalAnalysis.find_spikes` function from the toolbox to extract the spike times of the AB/PD neuron.
+From this data, we can then perform some analysis or plotting of the results. For example, we could use the :func:`NeuromorphicControlToolbox.signalAnalysis.find_spikes` function from the toolbox to extract the spike times of the AB/PD neuron.
 
 .. code-block:: matlab
 
     %% Using signal logging
     logdata = get(out.logsout, "AB/PD");
 
-    Spikes = NeuroCont.signalAnalysis.find_spikes(logdata.Values.Data, logdata.Values.Time);
+    Spikes = NeuromorphicControlToolbox.signalAnalysis.find_spikes(logdata.Values.Data, logdata.Values.Time);
 
     %% Using To Workspace block
-    Spikes = NeuroCont.signalAnalysis.find_spikes(out.simout.Data, out.simout.Time);
+    Spikes = NeuromorphicControlToolbox.signalAnalysis.find_spikes(out.simout.Data, out.simout.Time);
 
 From this data about the spikes, we could, for example, compute the interspike intervals and perform some statistics and plotting.
 
@@ -196,7 +196,7 @@ On the histogram, we can clearly see two peaks signifying the bursting behavior 
 Simulating with mismatch and analyzing results across simulations
 -----------------------------------------------------------------
 
-To perform further analysis, we may want to test the model's robustness to component mismatch. To do this, we can use the :func:`NeuroCont.mismatch.apply_to_system` function to create an array of :class:`Simulink.SimulationInput` objects, each with mismatch applied to the model's block parameters for a given simulation. We can then simulate the resulting SimulationInput array using the standard :func:`sim` command.
+To perform further analysis, we may want to test the model's robustness to component mismatch. To do this, we can use the :func:`NeuromorphicControlToolbox.mismatch.apply_to_system` function to create an array of :class:`Simulink.SimulationInput` objects, each with mismatch applied to the model's block parameters for a given simulation. We can then simulate the resulting SimulationInput array using the standard :func:`sim` command.
 
 .. code-block:: matlab
 
@@ -205,7 +205,7 @@ To perform further analysis, we may want to test the model's robustness to compo
     mismatchParam = struct();
     mismatchParam.std = 0.05;
     mismatchParam.width = 4*mismatchParam.std;
-    simins = NeuroCont.mismatch.apply_to_system("STGexample", mismatchParam, 10, "baseOptions", "on", "mismatchIncludeList", "all", "blockTypeIncludeList", "all");
+    simins = NeuromorphicControlToolbox.mismatch.apply_to_system("STGexample", mismatchParam, 10, "baseOptions", "on", "mismatchIncludeList", "all", "blockTypeIncludeList", "all");
 
     out = sim(simins);
 
@@ -215,7 +215,7 @@ This results in an array of 10 :class:`Simulink.SimulationOutput` objects stored
 
     intervals_mean = zeros(length(out), 1);
     for i = 1:length(out)
-        Spikes = NeuroCont.signalAnalysis.find_spikes(out(i).simout.Data, out(i).simout.Time);
+        Spikes = NeuromorphicControlToolbox.signalAnalysis.find_spikes(out(i).simout.Data, out(i).simout.Time);
         try
             Spike_Intervals = Spikes(2:end,1) - Spikes(1:end-1,1);
             mean_spikes = mean(Spike_Intervals);

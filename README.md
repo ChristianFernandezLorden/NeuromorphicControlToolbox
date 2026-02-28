@@ -1,4 +1,4 @@
-# NeuroCont:  a MATLAB® and Simulink® Neuromorphic Toolbox for Control
+# Neuromorphic Control Toolbox:  a MATLAB® and Simulink® Toolbox for Control using Neuromorphic Principles
 
 A MATLAB® and Simulink® Toolbox designed to build and analyse control system built using neuromorphic components and principles.
 

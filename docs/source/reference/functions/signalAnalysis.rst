@@ -1,5 +1,5 @@
 :mod:`signalAnalysis`
 =====================
 
-.. mat:automodule:: NeuroCont.signalAnalysis
+.. mat:automodule:: NeuromorphicControlToolbox.signalAnalysis
     :members: 

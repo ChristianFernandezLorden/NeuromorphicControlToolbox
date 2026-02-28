@@ -3,9 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-================================================================
-NeuroCont : a |matlab_simulink| Neuromorphic Toolbox for Control
-================================================================
+====================================================================================================
+Neuromorphic Control Toolbox : a |matlab_simulink| Toolbox for Control using Neuromorphic Principles
+====================================================================================================
 
 A |matlab_simulink| Toolbox designed to build and analyse control system built using neuromorphic components and principles.
 
