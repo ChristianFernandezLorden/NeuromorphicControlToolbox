@@ -1,0 +1,20 @@
+{
+    "version": "1.0",
+    "entries": [
+        {
+            "type": "Action",
+            "id": "neuromorphicControlToolboxRunWithMismatch",
+            "text": "Mismatched Run",
+            "description": "Simulate the system with mismatch",
+            "icon": "play",
+            "command": "NeuromorphicControlToolbox.internal.toolstrip.simulateWithMistmatch"
+        },
+        {
+            "type": "Action",
+            "id": "neuromorphicControlToolboxSetMismatch",
+            "text": "Set Mismatch",
+            "description": "Set the mismatch parameters",
+            "command": "NeuromorphicControlToolbox.internal.toolstrip.queryMismatchData"
+        }
+    ]
+}

@@ -6,5 +6,6 @@ Functions
     :maxdepth: 1
     :caption: Subnamespaces:
     
-    mismatch
     signalAnalysis
+    mismatch
+    internal

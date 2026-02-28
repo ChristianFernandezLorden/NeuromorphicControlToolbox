@@ -1,5 +1,5 @@
 :mod:`mismatch`
 ===============
 
-.. mat:automodule:: NeuroCont.mismatch
+.. mat:automodule:: NeuromorphicControlToolbox.mismatch
     :members: 
