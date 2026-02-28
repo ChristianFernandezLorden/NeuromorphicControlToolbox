@@ -2,7 +2,7 @@ Interface
 =========
 
 Installing the toolbox will not make any addition to the |matlab| window. 
-The changes will be a new library in the |simulink| Library Browser and new functions in |matlab| under the :mod:`NeuroCont` namespace.
+The changes will be a new library in the |simulink| Library Browser and new functions in |matlab| under the :mod:`NeuromorphicControlToolbox` namespace.
 
 |simulink| Interface
 --------------------
@@ -42,12 +42,12 @@ A general example of adding a library block to a model is the following |matlab|
 |matlab| Interface
 ------------------
 
-The |matlab| additions of the toolbox are a set of functions under the :mod:`NeuroCont` namespace. 
+The |matlab| additions of the toolbox are a set of functions under the :mod:`NeuromorphicControlToolbox` namespace. 
 They can be accessed directly using the full path of the function like so :
 
 .. code:: matlab
 
-    NeuroCont.{subnamespace}.{func}({func_args}) 
+    NeuromorphicControlToolbox.{subnamespace}.{func}({func_args}) 
 
 To avoid writing such long function calls, the |matlabimportcommand|_ allows to specify the full namespace once then either only call the function by name or by only using a subnamespace depending on the :attr:`import` statement.
 
@@ -56,6 +56,6 @@ To avoid writing such long function calls, the |matlabimportcommand|_ allows to 
 
 .. code:: matlab
 
-    import NeuroCont.{subnamespace}.{func} % Import only the specified function
-    import NeuroCont.{subnamespace}.*      % Import all functions in the subnamespace
-    import NeuroCont.*                     % Import all subnamespaces
+    import NeuromorphicControlToolbox.{subnamespace}.{func} % Import only the specified function
+    import NeuromorphicControlToolbox.{subnamespace}.*      % Import all functions in the subnamespace
+    import NeuromorphicControlToolbox.*                     % Import all subnamespaces

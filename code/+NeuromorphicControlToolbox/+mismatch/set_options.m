@@ -48,7 +48,7 @@ function mismatchOption = set_options(varargin)
     %   
     %   ``'mismatchFunctions'``: (containers.Map(char,containers.Map(char,function_handle))) -- function(s) that apply mismatch to a specific block type.
 
-    import NeuroCont.mismatch.*
+    import NeuromorphicControlToolbox.mismatch.*
 
     varg = varargin;
     if mod(length(varargin),2) ~= 0

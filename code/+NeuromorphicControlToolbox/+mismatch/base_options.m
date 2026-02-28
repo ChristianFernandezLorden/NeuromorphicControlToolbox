@@ -37,7 +37,7 @@ function mismatchOption = base_options(varargin)
     % :Name-Value Inputs:
     %   see :func:`set_options`
 
-    import NeuroCont.mismatch.*
+    import NeuromorphicControlToolbox.mismatch.*
 
     mismatch_functions = containers.Map( ...
         {'Tunable Sigmoid', 'First Order Lag', 'Neuron', 'Synapse with Facilitation', 'Synapse with Depression', 'Modulatory Synapse', 'Event Demux', 'Event Mux', 'Continuous to Event', 'Event to Continuous'},...

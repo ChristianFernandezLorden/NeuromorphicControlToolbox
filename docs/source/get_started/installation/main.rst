@@ -18,7 +18,7 @@ Add-On Explorer
 Installing the toolbox in |matlab_simulink| using the integrated *Add-On Explorer* is done by the following procedure :
 
 #. Open the Add-On Explorer window.
-#. Type *NeuroCont* in the search bar and click on the toolbox.
+#. Type *Neuromorphic Control Toolbox* in the search bar and click on the toolbox.
 #. On the toolbox page, click on the *Add* button.
 
 .. only:: html
@@ -43,7 +43,7 @@ Installing the toolbox in |matlab_simulink| using the integrated *Add-On Explore
 Toolbox Installation File
 *************************
 
-Installing the toolbox by using the add-on installation file requires downloading the :file:`NeuroCont.mltbx` file from |github-link| in the realease asset or |mathworks-file-exchange-link| using the toolbox download button.
+Installing the toolbox by using the add-on installation file requires downloading the :file:`NeuromorphicControlToolbox.mltbx` file from |github-link| in the realease asset or |mathworks-file-exchange-link| using the toolbox download button.
 
 .. only:: html
 
@@ -94,7 +94,7 @@ Then unpack the source code and place the directories :file:`blocks`, :file:`cod
 .. |matlabpath| replace:: |matlab| path
 .. _matlabpath: https://nl.mathworks.com/help/matlab/matlab_env/what-is-the-matlab-search-path.html
 
-Alternatively, you can repackage the toolbox into a :file:`.mltbx` file using the toolbox project file :file:`toolbox_package/neuromorphic-toolbox-for-control.prj`, and install it according to :ref:`toolbox-file-install`.
+Alternatively, you can repackage the toolbox into a :file:`.mltbx` file using the toolbox project file :file:`toolbox_package/Neuromorphic Control Toolbox.prj`, and install it according to :ref:`toolbox-file-install`.
 
 
 

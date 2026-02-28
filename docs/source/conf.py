@@ -1,7 +1,7 @@
 import os
 import xml.etree.ElementTree as ET
 
-github_link = "https://github.com/ChristianFernandezLorden/neuromorphic-toolbox-for-control"
+github_link = "https://github.com/ChristianFernandezLorden/NeuromorphicControlToolbox"
 mathworks_link = "https://nl.mathworks.com/matlabcentral/fileexchange/180432-neurocont"
 lab_link = "https://www.neuroengineering.uliege.be/cms/c_11384013/en/neuroengineering-laboratory"
 if 'READTHEDOCS' in os.environ:
@@ -18,13 +18,13 @@ else:
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'NeuroCont'
+project = 'Neuromorphic Control Toolbox'
 copyright = '2025-%Y, Université de Liège'
 author = 'Christian Fernandez Lorden'
 if 'READTHEDOCS' in os.environ:
     version = os.environ['READTHEDOCS_VERSION_NAME']
 else:
-    version = (ET.parse("../../toolbox_package/NeuroCont.prj").getroot().findall('./configuration/param.version')[0].text)
+    version = (ET.parse("../../toolbox_package/Neuromorphic Control Toolbox.prj").getroot().findall('./configuration/param.version')[0].text)
 release = version
 
 # -- General configuration ---------------------------------------------------
@@ -60,8 +60,8 @@ exclude_patterns = []
 bibtex_bibfiles = ['refs.bib']
 
 
-html_title = "NeuroCont"
-html_short_title = "NC"
+html_title = "Neuromorphic Control Toolbox"
+html_short_title = "NCT"
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
