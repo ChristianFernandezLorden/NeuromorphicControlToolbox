@@ -76,7 +76,7 @@ Or, alternatively, the add-on can be installed from the |matlab| Command Window 
 
 .. code:: matlab
 
-    matlab.addons.install("NeuroCont.mltbx")
+    matlab.addons.install("NeuromorphicControlToolbox.mltbx")
 
 
 .. note:: 

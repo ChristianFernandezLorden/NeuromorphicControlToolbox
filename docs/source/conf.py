@@ -2,12 +2,12 @@ import os
 import xml.etree.ElementTree as ET
 
 github_link = "https://github.com/ChristianFernandezLorden/NeuromorphicControlToolbox"
-mathworks_link = "https://nl.mathworks.com/matlabcentral/fileexchange/180432-neurocont"
+mathworks_link = "https://nl.mathworks.com/matlabcentral/fileexchange/180432-neuromorphic-control-toolbox"
 lab_link = "https://www.neuroengineering.uliege.be/cms/c_11384013/en/neuroengineering-laboratory"
 if 'READTHEDOCS' in os.environ:
     doc_link = os.environ['READTHEDOCS_CANONICAL_URL']
 else:
-    doc_link = "https://neuromorphic-toolbox-for-control.readthedocs.io/en/latest/"
+    doc_link = "https://neuromorphic-control-toolbox.readthedocs.io/latest/"
     
 
 # Configuration file for the Sphinx documentation builder.
