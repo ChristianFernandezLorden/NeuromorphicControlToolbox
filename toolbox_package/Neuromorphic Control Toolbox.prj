@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.toolbox" plugin-version="1.0">
-  <configuration build-checksum="4054555664" file="C:\Users\chris\Documents\Unif (gits)\Hide\neuromorphic-toolbox-for-control\toolbox_package\NeuromorphicControlToolbox.prj" location="C:\Users\chris\Documents\Unif (gits)\Hide\neuromorphic-toolbox-for-control\toolbox_package" name="NeuromorphicControlToolbox" target="target.toolbox" target-name="Package Toolbox">
+  <configuration build-checksum="4054555664" file="C:\Users\chris\Documents\Unif (gits)\Hide\neuromorphic-toolbox-for-control\toolbox_package\Neuromorphic Control Toolbox.prj" location="C:\Users\chris\Documents\Unif (gits)\Hide\neuromorphic-toolbox-for-control\toolbox_package" name="Neuromorphic Control Toolbox" target="target.toolbox" target-name="Package Toolbox">
     <param.appname>Neuromorphic Control Toolbox</param.appname>
     <param.authnamewatermark>Christian Fernandez Lorden</param.authnamewatermark>
     <param.email>Christian.FernandezLorden@uliege.be</param.email>
@@ -9,9 +9,18 @@
     <param.screenshot>C:\Users\chris\Documents\Unif (gits)\Hide\neuromorphic-toolbox-for-control\icons\toolbox_icon.png</param.screenshot>
     <param.version>0.3</param.version>
     <param.output>${PROJECT_ROOT}\Neuromorphic Control Toolbox.mltbx</param.output>
-    <param.products.name />
-    <param.products.id />
-    <param.products.version />
+    <param.products.name>
+      <item>MATLAB</item>
+      <item>Simulink</item>
+    </param.products.name>
+    <param.products.id>
+      <item>1</item>
+      <item>2</item>
+    </param.products.id>
+    <param.products.version>
+      <item>9.12</item>
+      <item>10.5</item>
+    </param.products.version>
     <param.platforms />
     <param.guid>e156b95d-ce5e-4378-84e7-a8dc440b17b8</param.guid>
     <param.exclude.filters>% List files contained in your toolbox folder that you would like to exclude
@@ -49,6 +58,8 @@ examples
 **/*.slxc
 *.autosave
 **/*.autosave
+*.asv
+**/*.asv
 %</param.exclude.filters>
     <param.exclude.pcodedmfiles>true</param.exclude.pcodedmfiles>
     <param.examples />
@@ -83,9 +94,6 @@ examples
       <param.email />
       <param.company />
       <param.output />
-      <param.products.name />
-      <param.products.id />
-      <param.products.version />
       <param.platforms />
       <param.exclude.pcodedmfiles />
       <param.examples />
