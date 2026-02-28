@@ -29,6 +29,7 @@
             Block implementing a neuron based on the mixed-feedback theory inspired by :footcite:t:`ribar_neuromodulation_2019`. The block can be mathematically described as:
 
             .. math:: 
+                :nowrap:
 
                 \begin{align}
                     \tau\tau_m\dot{V} &= I + V_0 + I_0 + i_{f-} - i_{s+} + i_{s-} - i_{u+} + i_{u-} - V\label{eq:neur_start}\\
@@ -98,6 +99,7 @@
             Block implementing a synapse with a facilitation mechanism. The blocks can be mathematically described as:
 
             .. math:: 
+                :nowrap:
 
                 \begin{align}
                     \tau\tau_r\dot{v} &= \text{In} - v\\
@@ -159,6 +161,7 @@
             Block implementing a synapse with a depression mechanism on top of a facilitation mechanism. The blocks can be mathematically described as:
 
             .. math:: 
+                :nowrap:
 
                 \begin{align}
                     \tau\tau_r\dot{v} &= \text{In} - v\\
@@ -225,6 +228,7 @@
             Block implementing a synapse emulating a modulation mechanism. The blocks can be mathematically described as:
 
             .. math:: 
+                :nowrap:
 
                 \begin{align}
                     \tau\tau_r\dot{p} &= \bar{p} + g_+\text{In}_+ - g_-\text{In}_- - p

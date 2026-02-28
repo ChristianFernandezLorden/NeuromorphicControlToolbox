@@ -39,8 +39,11 @@ Blocks
             Block performing a sigmoid transformation on an analog signal. The blocks can be mathematically described as:
 
             .. math:: 
+                :nowrap:
 
-                y = g\sigma(ax - d)
+                \begin{align}
+                    y = g\sigma(ax - d)
+                \end{align}
 
             where :math:`g` is the gain, :math:`a` the slope, and :math:`d` the bias of the sigmoid function.
             The gain :math:`g` can optionnaly be set as an input.
@@ -89,8 +92,11 @@ Blocks
             Block filtering an analog signal with a first order lag. The blocks can be mathematically described as:
 
             .. math:: 
+                :nowrap:
 
-                \tau\tau_r\dot{y} = gx - y
+                \begin{align}
+                    \tau\tau_r\dot{y} &= gx - y
+                \end{align}
 
             where :math:`\tau` is the timescale, :math:`\tau_r` the relative timescale, and :math:`g` the gain.
 

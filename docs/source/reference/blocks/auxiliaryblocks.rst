@@ -29,6 +29,7 @@
             Block performing a "multiplication" between an events signal and a selection signal. The blocks can be mathematically described as:
 
             .. math:: 
+                :nowrap:
 
                 \begin{align}
                     \text{Out}_+ &= f(a_+s - d_+)\text{In}\\
@@ -89,6 +90,7 @@
             Block performing a "selection" between two incoming events signals using a selection signal. The blocks can be mathematically described as:
 
             .. math:: 
+                :nowrap:
 
                 \begin{align}
                     \text{Out} &= f(a_+s - d_+)\text{In}_+ + f(a_-s - d_-)\text{In}_-
@@ -148,9 +150,10 @@
             Block generating an event when the input signal crosses a threshold from a certain direction (above to below or below to above). The block is compose of an input block that generates a current to an internal type III :attr:`Neuron`. The input block can be mathematically described as:
 
             .. math:: 
+                :nowrap:
 
                 \begin{align}
-                    I &= g\sigma(as - d)\\
+                    I &= g\sigma(as - d)
                 \end{align}
 
             where :math:`g` is the gain, :math:`a` the slope, and :math:`d` the bias of the input and :math:`I` is the current sent to the internal type III neuron.
@@ -202,6 +205,7 @@
             Block capable of storing the polarity of the last event received. The blocks can be mathematically described as:
 
             .. math:: 
+                :nowrap:
 
                 \begin{align}
                     \tau\tau_r\dot{v} &= s + g_+\text{In}_+ + g_-\text{In}_- - v\\
@@ -265,9 +269,10 @@
             Block adding band-limited white noise to the input signal. The blocks can be mathematically described as:
 
             .. math:: 
+                :nowrap:
 
                 \begin{align}
-                    y &= x + W(t)\\
+                    y &= x + W(t)
                 \end{align}
 
             where :math:`W(t)` is a band-limited white noise process with zero mean, standard deviation :math:`\sigma`, and a correlation time :math:`\tau\tau_r` with :math:`\tau` the timescale and :math:`\tau_r` the relative timescale.

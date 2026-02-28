@@ -29,9 +29,10 @@
             Block converting an analog signal to an event signal. The blocks can be mathematically described as:
 
             .. math:: 
+                :nowrap:
 
                 \begin{align}
-                    \delta &= H(x - d)\\
+                    \delta &= H(x - d)
                 \end{align}
 
             where :math:`H` is the Heaviside step function and :math:`d` is the threshold parameter.
@@ -73,9 +74,10 @@
             Block converting an event signal to an analog signal. The blocks can be mathematically described as:
 
             .. math:: 
+                :nowrap:
 
                 \begin{align}
-                    x &= g\delta\\
+                    x &= g\delta
                 \end{align}
 
             where :math:`g` is the gain parameter.
@@ -117,9 +119,10 @@
             Block transforming incoming events into fixed width events. The blocks can be mathematically described as:
             
             .. math:: 
+                :nowrap:
 
                 \begin{align}
-                    \delta_\text{out} &= H(T + t_{\delta_\text{in},i} - t)\delta_\text{in}\\
+                    \delta_\text{out} &= H(T + t_{\delta_\text{in},i} - t)\delta_\text{in}
                 \end{align}
 
             where :math:`T` is the fixed pulse width parameter, :math:`t_{\delta_\text{in},i}` is the rising edge time of the incoming event and :math:`t` is the current time.
@@ -161,9 +164,10 @@
             Block stochastically losing events according to a specified probability :math:`p`. The blocks can be mathematically described as: 
 
             .. math:: 
+                :nowrap:
 
                 \begin{align}
-                    \delta_\text{out} &= H(X[i] - p)\delta_\text{in}\\
+                    \delta_\text{out} &= H(X[i] - p)\delta_\text{in}
                 \end{align}
 
             where :math:`p` is the loss probability parameter and :math:`X[i]` is a random number uniformly drawn in :math:`[0, 1]` for each incoming event.
