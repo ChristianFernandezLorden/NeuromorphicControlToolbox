@@ -30,9 +30,9 @@
 
             .. math:: 
 
-                \begin{align}
-                    \delta &= H(x - d)\\
-                \end{align}
+                \begin{aligned}
+                    \delta &= H(x - d)
+                \end{aligned}
 
             where :math:`H` is the Heaviside step function and :math:`d` is the threshold parameter.
 
@@ -74,9 +74,9 @@
 
             .. math:: 
 
-                \begin{align}
-                    x &= g\delta\\
-                \end{align}
+                \begin{aligned}
+                    x &= g\delta
+                \end{aligned}
 
             where :math:`g` is the gain parameter.
 
@@ -118,9 +118,9 @@
             
             .. math:: 
 
-                \begin{align}
-                    \delta_\text{out} &= H(T + t_{\delta_\text{in},i} - t)\delta_\text{in}\\
-                \end{align}
+                \begin{aligned}
+                    \delta_\text{out} &= H(T + t_{\delta_\text{in},i} - t)\delta_\text{in}
+                \end{aligned}
 
             where :math:`T` is the fixed pulse width parameter, :math:`t_{\delta_\text{in},i}` is the rising edge time of the incoming event and :math:`t` is the current time.
 
@@ -162,9 +162,9 @@
 
             .. math:: 
 
-                \begin{align}
-                    \delta_\text{out} &= H(X[i] - p)\delta_\text{in}\\
-                \end{align}
+                \begin{aligned}
+                    \delta_\text{out} &= H(X[i] - p)\delta_\text{in}
+                \end{aligned}
 
             where :math:`p` is the loss probability parameter and :math:`X[i]` is a random number uniformly drawn in :math:`[0, 1]` for each incoming event.
 

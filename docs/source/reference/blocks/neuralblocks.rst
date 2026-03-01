@@ -30,7 +30,7 @@
 
             .. math:: 
 
-                \begin{align}
+                \begin{aligned}
                     \tau\tau_m\dot{V} &= I + V_0 + I_0 + i_{f-} - i_{s+} + i_{s-} - i_{u+} + i_{u-} - V\label{eq:neur_start}\\
                     i_{f-} &= g_{f-}\left(\tanh\left(a_{f+}v_f-d_{f-}\right) - \tanh\left(a_{f-}V_0-d_{f-}\right)\right)\\ 
                     i_{s+} &= g_{s+}\left(\tanh\left(a_{s-}v_s-d_{s+}\right) - \tanh\left(a_{s+}V_0-d_{s+}\right)\right)\\ 
@@ -41,7 +41,7 @@
                     \tau\tau_s\dot{v_s} &= v - v_s\\
                     \tau\tau_u\dot{v_u} &= v - v_u\\
                     \delta &= \mathop{H}(V-d_\delta).
-                \end{align}
+                \end{aligned}
 
             where :math:`g_*` are the conductances, :math:`a_*` the slopes, :math:`d_*` the biases, :math:`d_\delta` the event threshold, :math:`\tau` the timescale, :math:`\tau_*` the relative timescales, :math:`V_0` the resting potential, :math:`I_0` the bias current, and :math:`\mathop{H}` the Heaviside step function. The conductances :math:`g_*` can optionnaly be set as an input.
 
@@ -99,10 +99,10 @@
 
             .. math:: 
 
-                \begin{align}
+                \begin{aligned}
                     \tau\tau_r\dot{v} &= \text{In} - v\\
                     I &= g\sigma(av - d)
-                \end{align}
+                \end{aligned}
 
             where :math:`\tau` the timescale, :math:`\tau_r` the relative timescale, :math:`g` is the conductance, :math:`a` the slope, and :math:`d` the bias.
             The conductance :math:`g` can optionnaly be set as an input.
@@ -160,12 +160,12 @@
 
             .. math:: 
 
-                \begin{align}
+                \begin{aligned}
                     \tau\tau_r\dot{v} &= \text{In} - v\\
                     \tau\tau_d\dot{v_d} &= \text{In} - v_d\\
                     g_d(v_d) &= g\sigma(a_dv_d - d_d)\\
                     I &= g_d(v_d)\sigma(av - d)
-                \end{align}
+                \end{aligned}
 
             where :math:`\tau` the timescale, :math:`\tau_r` the relative timescale, :math:`\tau_d` the relative depression timescale, :math:`g` is the conductance, :math:`a` the slope, :math:`d` the bias, :math:`a_d` the depression slope, and :math:`d_d` the depression bias.
             The conductance :math:`g` can optionnaly be set as an input.
@@ -226,9 +226,9 @@
 
             .. math:: 
 
-                \begin{align}
+                \begin{aligned}
                     \tau\tau_r\dot{p} &= \bar{p} + g_+\text{In}_+ - g_-\text{In}_- - p
-                \end{align}
+                \end{aligned}
 
             where :math:`\tau` the timescale, :math:`\tau_r` the relative timescale, :math:`\bar{p}` the base parameter value, :math:`g_+` the positive conductance, and :math:`g_-` the negative conductance.
             The conductance :math:`g_+` and :math:`g_-` can optionnaly be set as an input.
