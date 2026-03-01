@@ -150,11 +150,10 @@
             Block generating an event when the input signal crosses a threshold from a certain direction (above to below or below to above). The block is compose of an input block that generates a current to an internal type III :attr:`Neuron`. The input block can be mathematically described as:
 
             .. math:: 
-                :nowrap:
 
-                \begin{align}
-                    I &= g{\sigma}(a s - d)
-                \end{align}
+                \begin{aligned}
+                    I &= g\sigma(a s - d)
+                \end{aligned}
 
             where :math:`g` is the gain, :math:`a` the slope, and :math:`d` the bias of the input and :math:`I` is the current sent to the internal type III neuron.
 
