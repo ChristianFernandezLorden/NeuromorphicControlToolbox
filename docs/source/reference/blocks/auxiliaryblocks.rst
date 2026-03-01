@@ -29,12 +29,11 @@
             Block performing a "multiplication" between an events signal and a selection signal. The blocks can be mathematically described as:
 
             .. math:: 
-                :nowrap:
 
-                \begin{align}
+                \begin{aligned}
                     \text{Out}_+ &= f(a_+s - d_+)\text{In}\\
                     \text{Out}_- &= f(a_-s - d_-)\text{In}
-                \end{align}
+                \end{aligned}
 
             where :math:`f` is either a Heaviside step function :math:`H` or a sigmoid function :math:`\sigma` depending on the input-output type, and :math:`a_{\pm}` are the slopes and :math:`d_{\pm}` the biases of the selection function.
 
@@ -90,11 +89,10 @@
             Block performing a "selection" between two incoming events signals using a selection signal. The blocks can be mathematically described as:
 
             .. math:: 
-                :nowrap:
 
-                \begin{align}
+                \begin{aligned}
                     \text{Out} &= f(a_+s - d_+)\text{In}_+ + f(a_-s - d_-)\text{In}_-
-                \end{align}
+                \end{aligned}
 
             where :math:`f` is either a Heaviside step function :math:`H` or a sigmoid function :math:`\sigma` depending on the input-output type, and :math:`a_{\pm}` are the slopes and :math:`d_{\pm}` the biases of the selection functions.
 
@@ -150,11 +148,10 @@
             Block generating an event when the input signal crosses a threshold from a certain direction (above to below or below to above). The block is compose of an input block that generates a current to an internal type III :attr:`Neuron`. The input block can be mathematically described as:
 
             .. math:: 
-                :nowrap:
-
-                \begin{align}
-                    I &= g{\sigma}(as - d)
-                \end{align}
+                
+                \begin{aligned}
+                    I &= g\sigma(a s - d)\\
+                \end{aligned}
 
             where :math:`g` is the gain, :math:`a` the slope, and :math:`d` the bias of the input and :math:`I` is the current sent to the internal type III neuron.
 
@@ -205,12 +202,11 @@
             Block capable of storing the polarity of the last event received. The blocks can be mathematically described as:
 
             .. math:: 
-                :nowrap:
 
-                \begin{align}
+                \begin{aligned}
                     \tau\tau_r\dot{v} &= s + g_{+}\text{In}_{+} + g_{-}\text{In}_{-} - v\\
                     s &= g\sigma(av - d)
-                \end{align}
+                \end{aligned}
 
             where :math:`\tau` is the timescale, :math:`\tau_r` the relative timescale, :math:`g_+` the positive input gain, :math:`g_-` the negative input gain and :math:`g` the gain, :math:`a` the slope, and :math:`d` the bias of the feedback function.
 
@@ -269,11 +265,10 @@
             Block adding band-limited white noise to the input signal. The blocks can be mathematically described as:
 
             .. math:: 
-                :nowrap:
 
-                \begin{align}
+                \begin{aligned}
                     y &= x + W(t)
-                \end{align}
+                \end{aligned}
 
             where :math:`W(t)` is a band-limited white noise process with zero mean, standard deviation :math:`\sigma`, and a correlation time :math:`\tau\tau_r` with :math:`\tau` the timescale and :math:`\tau_r` the relative timescale.
 
