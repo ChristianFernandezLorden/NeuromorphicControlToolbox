@@ -153,7 +153,7 @@
                 :nowrap:
 
                 \begin{align}
-                    I &= g{\sigma}(as - d)
+                    I &= g{\sigma}(a s - d)
                 \end{align}
 
             where :math:`g` is the gain, :math:`a` the slope, and :math:`d` the bias of the input and :math:`I` is the current sent to the internal type III neuron.
