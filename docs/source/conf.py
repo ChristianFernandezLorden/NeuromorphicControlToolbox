@@ -30,16 +30,37 @@ release = version
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = [
-    'sphinx.ext.duration',
-    'sphinxcontrib.bibtex',
-    'sphinx_design',
-    'sphinx.ext.autodoc', 
-    'sphinxcontrib.matlab',
-    'sphinx.ext.napoleon',
-    'sphinx_autodoc_typehints',
-    'sphinx_copybutton'
-]
+if 'READTHEDOCS' in os.environ:
+    extensions = [
+        'sphinx.ext.duration',
+        'sphinxcontrib.bibtex',
+        'sphinx_design',
+        'sphinx.ext.autodoc', 
+        'sphinxcontrib.matlab',
+        'sphinx.ext.napoleon',
+        'sphinx_autodoc_typehints',
+        'sphinx_copybutton',
+        'sphinx.ext.mathjax'
+    ]
+    
+    mathjax4_config = {
+        'output': {
+            'displayOverflow': 'scroll'
+        }
+    }
+else:
+    extensions = [
+        'sphinx.ext.duration',
+        'sphinxcontrib.bibtex',
+        'sphinx_design',
+        'sphinx.ext.autodoc', 
+        'sphinxcontrib.matlab',
+        'sphinx.ext.napoleon',
+        'sphinx_autodoc_typehints',
+        'sphinx_copybutton'
+    ]
+    
+    
 napoleon_numpy_docstring = True
 napoleon_custom_sections = [('Inputs','params_style'),('Input','params_style'),
                             ('Outputs','params_style'),('Output','params_style'),
