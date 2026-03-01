@@ -30,6 +30,7 @@ release = version
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
+
 extensions = [
     'sphinx.ext.duration',
     'sphinxcontrib.bibtex',
@@ -40,6 +41,8 @@ extensions = [
     'sphinx_autodoc_typehints',
     'sphinx_copybutton'
 ]
+    
+    
 napoleon_numpy_docstring = True
 napoleon_custom_sections = [('Inputs','params_style'),('Input','params_style'),
                             ('Outputs','params_style'),('Output','params_style'),

@@ -40,7 +40,9 @@ Blocks
 
             .. math:: 
 
-                y = g\sigma(ax - d)
+                \begin{aligned}
+                    y = g\sigma(ax - d)
+                \end{aligned}
 
             where :math:`g` is the gain, :math:`a` the slope, and :math:`d` the bias of the sigmoid function.
             The gain :math:`g` can optionnaly be set as an input.
@@ -90,7 +92,9 @@ Blocks
 
             .. math:: 
 
-                \tau\tau_r\dot{y} = gx - y
+                \begin{aligned}
+                    \tau\tau_r\dot{y} &= gx - y
+                \end{aligned}
 
             where :math:`\tau` is the timescale, :math:`\tau_r` the relative timescale, and :math:`g` the gain.
 
