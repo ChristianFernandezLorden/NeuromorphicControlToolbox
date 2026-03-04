@@ -42,6 +42,11 @@ function spikes = find_spikes(V, T, threshold)
     else
         [up_crossings, down_crossings] = find_crossing_times(V-threshold,T);
     end
+
+    if isempty(up_crossings) || isempty(down_crossings)
+        spikes = zeros(0,3);
+        return;
+    end
     
 
     if down_crossings(1) < up_crossings(1)
@@ -49,6 +54,12 @@ function spikes = find_spikes(V, T, threshold)
     end
     if length(up_crossings) > length(down_crossings)
         up_crossings = up_crossings(1:end-1);
+    end
+
+
+    if isempty(up_crossings) || isempty(down_crossings)
+        spikes = zeros(0,3);
+        return;
     end
 
     assert(length(up_crossings) == length(down_crossings), "Error in find_spikes, crossing vector are not of the same size");
