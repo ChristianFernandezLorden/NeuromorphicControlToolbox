@@ -1,13 +1,13 @@
 <deployment-project plugin="plugin.toolbox" plugin-version="1.0">
-  <configuration build-checksum="4054555664" file="C:\Users\chris\Documents\Unif (gits)\Hide\neuromorphic-toolbox-for-control\toolbox_package\Neuromorphic Control Toolbox.prj" location="C:\Users\chris\Documents\Unif (gits)\Hide\neuromorphic-toolbox-for-control\toolbox_package" name="Neuromorphic Control Toolbox" target="target.toolbox" target-name="Package Toolbox">
+  <configuration build-checksum="4054555664" file="C:\Users\chris\Documents\Unif (gits)\Hide\NeuromorphicControlToolbox\toolbox_package\Neuromorphic Control Toolbox.prj" location="C:\Users\chris\Documents\Unif (gits)\Hide\NeuromorphicControlToolbox\toolbox_package" name="Neuromorphic Control Toolbox" target="target.toolbox" target-name="Package Toolbox">
     <param.appname>Neuromorphic Control Toolbox</param.appname>
     <param.authnamewatermark>Christian Fernandez Lorden</param.authnamewatermark>
     <param.email>Christian.FernandezLorden@uliege.be</param.email>
     <param.company>Université de Liège</param.company>
     <param.summary>A MATLAB® and Simulink® Toolbox designed to build and analyse control system built using neuromorphic components and principles.</param.summary>
     <param.description>Provides a library of Simulink® blocks implementing neuromorphic components as well as functions to analyse signals and apply device mismatch to Simulink® models.</param.description>
-    <param.screenshot>C:\Users\chris\Documents\Unif (gits)\Hide\neuromorphic-toolbox-for-control\icons\toolbox_icon.png</param.screenshot>
-    <param.version>0.3</param.version>
+    <param.screenshot>C:\Users\chris\Documents\Unif (gits)\Hide\NeuromorphicControlToolbox\icons\toolbox_icon.png</param.screenshot>
+    <param.version>0.3.1</param.version>
     <param.output>${PROJECT_ROOT}\Neuromorphic Control Toolbox.mltbx</param.output>
     <param.products.name>
       <item>MATLAB</item>
@@ -31,9 +31,6 @@
 .gitignore
 add_library.m
 test_mismatch.slx
-.git
-slprj
-toolbox_package
 
 %
 % A single file in a subfolder of the toolbox folder:
@@ -42,9 +39,10 @@ toolbox_package
 % All files in a subfolder of the toolbox folder:
 .*
 slprj/*
+slprj
+.git
 toolbox_package
 docs
-interface/resources/json
 examples
 
 %
@@ -68,9 +66,7 @@ examples
     <param.registered.apps />
     <param.docs />
     <param.getting.started.guide />
-    <param.matlabpath.excludes>
-      <item>/toolbox_package</item>
-    </param.matlabpath.excludes>
+    <param.matlabpath.excludes />
     <param.javaclasspath.excludes />
     <param.exported.on.package>false</param.exported.on.package>
     <param.required.addons />
@@ -102,6 +98,7 @@ examples
       <param.registered.apps />
       <param.docs />
       <param.getting.started.guide />
+      <param.matlabpath.excludes />
       <param.javaclasspath.excludes />
       <param.exported.on.package />
       <param.required.addons />
@@ -120,21 +117,21 @@ examples
       <param.additional.sw.linux.url />
     </unset>
     <fileset.rootdir>
-      <file>C:\Users\chris\Documents\Unif (gits)\Hide\neuromorphic-toolbox-for-control</file>
+      <file>C:\Users\chris\Documents\Unif (gits)\Hide\NeuromorphicControlToolbox</file>
     </fileset.rootdir>
     <fileset.rootfiles>
-      <file>C:\Users\chris\Documents\Unif (gits)\Hide\neuromorphic-toolbox-for-control\blocks</file>
-      <file>C:\Users\chris\Documents\Unif (gits)\Hide\neuromorphic-toolbox-for-control\code</file>
-      <file>C:\Users\chris\Documents\Unif (gits)\Hide\neuromorphic-toolbox-for-control\icons</file>
-      <file>C:\Users\chris\Documents\Unif (gits)\Hide\neuromorphic-toolbox-for-control\LICENSE</file>
-      <file>C:\Users\chris\Documents\Unif (gits)\Hide\neuromorphic-toolbox-for-control\README.md</file>
-      <file>C:\Users\chris\Documents\Unif (gits)\Hide\neuromorphic-toolbox-for-control\resources</file>
+      <file>C:\Users\chris\Documents\Unif (gits)\Hide\NeuromorphicControlToolbox\blocks</file>
+      <file>C:\Users\chris\Documents\Unif (gits)\Hide\NeuromorphicControlToolbox\code</file>
+      <file>C:\Users\chris\Documents\Unif (gits)\Hide\NeuromorphicControlToolbox\icons</file>
+      <file>C:\Users\chris\Documents\Unif (gits)\Hide\NeuromorphicControlToolbox\LICENSE</file>
+      <file>C:\Users\chris\Documents\Unif (gits)\Hide\NeuromorphicControlToolbox\README.md</file>
+      <file>C:\Users\chris\Documents\Unif (gits)\Hide\NeuromorphicControlToolbox\resources</file>
     </fileset.rootfiles>
     <fileset.depfun.included />
     <fileset.depfun.excluded />
     <fileset.package />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}" name="Neuromorphic Control Toolbox.mltbx" optional="false">C:\Users\chris\Documents\Unif (gits)\Hide\neuromorphic-toolbox-for-control\toolbox_package\Neuromorphic Control Toolbox.mltbx</file>
+      <file location="${PROJECT_ROOT}" name="Neuromorphic Control Toolbox.mltbx" optional="false">C:\Users\chris\Documents\Unif (gits)\Hide\NeuromorphicControlToolbox\toolbox_package\Neuromorphic Control Toolbox.mltbx</file>
     </build-deliverables>
     <workflow />
     <matlab>
